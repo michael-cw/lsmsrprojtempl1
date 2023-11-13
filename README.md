@@ -11,6 +11,8 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
+<div align="justify">
+
 This is a preliminary version of a template for LSMS technical reports
 (i.e. sampling reports, data preparation reports). It is based on the
 [Rstudio project
@@ -123,3 +125,5 @@ install.packages("devtools")
 ``` r
 devtools::install_github("michael-cw/lsmsrprojtempl1")
 ```
+
+</div>
