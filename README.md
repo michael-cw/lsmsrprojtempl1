@@ -26,9 +26,17 @@ see [here](https://reproducibility.worldbank.org/index.php/home).
 After installing the package, you can create a new project from the
 template by selecting “File \> New Project \> New Directory \> LSMS
 report template” in Rstudio. You will be asked to provide a project name
-and a directory where the project should be created. The project will be
-created in a new directory with the name you provided. The project
-directory will contain the following files and directories:
+and a directory where the project should be created.
+
+<p float="left">
+<img src="./man/img/proj1.png" width="32%" />
+<img src="./man/img/proj2.png" width="32%" />
+<img src="./man/img/proj3.png" width="32%" />
+</p>
+
+The project will be created in a new directory with the name you
+provided. The project directory will contain the following files and
+directories:
 
 ``` r
 ├── data
