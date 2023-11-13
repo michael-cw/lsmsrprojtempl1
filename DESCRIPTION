@@ -1,0 +1,20 @@
+Type: Package
+Package: lsmsrprojtempl1
+Title: Rstudio/R project set-up for LSMS style technical reports in MS
+    office format (Word, Powerpoint)
+Version: 0.1.0
+Authors@R: 
+    person("Michael", "Wild", , "mwild@worldbank.org", role = c("aut", "cre"))
+Description: This package is intended to be used as a project template for
+    RStudio projects, when creating LSMS style technical reports in MS Word or Powerpoint, 
+    like i.e. sampling reports or the like.
+License: MIT + file LICENSE
+Depends: 
+    R (>= 3.3.2)
+Imports: 
+    ggplot2,
+    magrittr,
+    officer
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3

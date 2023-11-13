@@ -1,0 +1,117 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# LSMS - RStudio Project Template 1: Technical Reports
+
+## Background
+
+<!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+<!-- badges: end -->
+
+This is a preliminary version of a template for LSMS technical reports
+(i.e. sampling reports, data preparation reports). It is based on the
+[Rstudio project
+template](https://rstudio.github.io/rstudio-extensions/rstudio_project_templates.html).
+The main aim of this (and similar templates) is the standardization of
+the report creation process, and the increase in reproducibility, in
+line with the World Bank’s reproducible research principles. For more
+details on the World Bank’s approach to reproducible research, please
+see [here](https://reproducibility.worldbank.org/index.php/home).
+
+## Project set-up
+
+After installing the package, you can create a new project from the
+template by selecting “File \> New Project \> New Directory \> LSMS
+report template” in Rstudio. You will be asked to provide a project name
+and a directory where the project should be created. The project will be
+created in a new directory with the name you provided. The project
+directory will contain the following files and directories:
+
+``` r
+├── data
+│   ├── in
+│   └── out
+├── doc
+├── R
+│   └── report_data_preparation.R
+├── myproject.Rproj
+├── templates
+│   └── word
+│       ├── logoWBDG.png
+│       └── report_template_DECLS_v2.docx
+└── text
+    ├── sec1_para1.txt
+    ├── sec1_para2.txt
+    ├── sec2_para1.txt
+    ├── sec3_para1.txt
+    ├── sec3_para2.txt
+    └── sec3_para3.txt
+    
+```
+
+The package itself is based on the
+[officer](https://davidgohel.github.io/officer/) package and contains
+only one main function (plus a few helpers) to create a Word document
+from a template, this template can also be replaced. During the creation
+of the project, the word template is copied to the templates directory.
+
+The main function is called `genreport()` and requires one main input,
+which is the list of word document elements. The file
+`R/report_data_preparation.R` contains an example set up script, which
+can be modified to fit the needs of the report. The function
+`genreport()` is called at the end of the file and will create the Word
+document in the `doc` directory.
+
+In the `text` directory, you can place the text elements used in the
+report. During the project creation process, some example files are
+created in line with the names used for the different input list
+elements written in the `R/report_data_preparation.R` file.
+
+The `doc` directory contains the final report, which is created by the
+`genreport()` function. The `data` directory contains two
+subdirectories, `in` and `out`. The `in` directory is used to store the
+input data, the `out` directory is used to store the output data. The
+`R` directory contains the `report_data_preparation.R` file, which is
+used to create the report. The `myproject.Rproj` file is the Rstudio
+project file.
+
+In addition the template also creates a local **.Rprofile**, with the
+following content:
+
+``` r
+# .Rprofile
+library("lsmsrprojtempl1")
+```
+
+This will load the package automatically when the project is opened.
+
+**ATTENTION:** This package is at an early stage of development and will
+be updated regularly. Please check for updates regularly, and if you
+have any suggestions or comments, please let me know. One of the next
+steps will also be the addition of a Power Point template, currently
+only the word template is available. In addition the Github option, even
+though available during the project creation process, is not yet fully
+functional.
+
+## Installation
+
+- Install R: <https://cran.r-project.org/mirrors.html> (version 4.1.1 or
+  greater)
+
+- Install R Studio: <https://rstudio.com/products/rstudio/download/>
+  (version 1.2.5001-3 or newer)
+
+- Make sure the *devtools* package is installed, if not install it with:
+
+``` r
+install.packages("devtools")
+```
+
+- After that install the actual package:
+
+``` r
+devtools::install_github("michael-cw/lsmsrprojtempl1")
+```

@@ -1,0 +1,41 @@
+Binding: create_proj_report_gui
+Title: LSMS Report Template
+OpenFiles: R/report_data_preparation.R, text/sec1_para1.txt, text/sec2_para1.txt
+
+Parameter: select
+Widget: SelectInput
+Label: Select Type
+Fields: Word, Powerpoint
+Default: Word
+Position: left
+
+Parameter: packages
+Widget: TextInput
+Label: Libraries to load (comma separated)
+Default: data.table
+Position: right
+
+Parameter: report_name
+Widget: TextInput
+Label: Report Name
+Default: LSMS Report
+Position: right
+
+Parameter: creator
+Widget: TextInput
+Label: Responsible Name
+Default: My Name
+Position: right
+
+Parameter: target
+Widget: TextInput
+Label: Output File Name (.docx!)
+Default: lsms_report.docx
+Position: left
+
+
+Parameter: with_git
+Widget: CheckboxInput
+Label: Create a git repository
+Default: Off
+Position: left
